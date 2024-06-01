@@ -27,6 +27,7 @@ module.exports = {
         node: true,
         es6: true,
       },
+      plugins: ['eslint-plugin-react-compiler'],
       extends: [
         'eslint:recommended',
         'plugin:import/errors',
@@ -135,6 +136,7 @@ module.exports = {
             ignoreMiddleExtensions: true,
           },
         ],
+        'react-compiler/react-compiler': 'error'
       },
     },
     {
