@@ -8,7 +8,7 @@
     "build": "tsc && vite build --base=/",
     "preview": "vite preview",
     "test": "vitest",
-    "start-e2e-env": "pm2 start \"yarn run-mock-server\" --name server && yarn build && pm2 start \"yarn preview\" --name client",
+    "start-e2e-env": "pm2 start \"yarn run-mock-server\" --name server && pm2 start \"yarn dev\" --name client",
     "stop-e2e-env": "pm2 stop server && pm2 stop client",
     "test-e2e": "yarn start-e2e-env && yarn playwright test",
     "prepare": "husky",
